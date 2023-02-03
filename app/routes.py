@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from app import app
 
 # Creating a Flask application object
 app = Flask(__name__)
@@ -14,3 +15,4 @@ def index():
 def result():
     # Returning the template result.html
     return render_template('result.html')
+
